@@ -16,6 +16,8 @@ jobs:
     - name: tests
       id: tests
       uses: classroom-resources/autograding-python-grader@v1
+      env:
+        PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
       with:
         timeout: 10
         setup-command: ''
